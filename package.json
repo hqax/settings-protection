@@ -1,0 +1,134 @@
+{
+  "title": "Settings Protection",
+  "name": "settings-protection",
+  "version": "1.0.5",
+  "id": "settings_protection@svnsiva",
+  "description": "        Settings(or)options changes that are not made by the user are saved only with authentication. Clearly, if any change occurred that is not from settings(or)options page, then the user is prompted for password authentication. If the user discards the authentication, the new changes are not saved. The user has an option to use Master password or separate password for the authentication. \n\n    We would like the user to use Master password for authentication if you are already using the Master password to avoid unnecessary authentication prompting. Settings that are changed from other add-ons are also monitored and the user has the feasibility to avoid monitoring changes from other add-ons. For New Tab URL, Search Engine and Home page URL settings the user has a preference to exempt from monitoring. For other settings, the user has a preference to exempt a group of settings like general settings, security settings, etc. New tab URL, Search Engine, and Home page URL settings are not included in their corresponding group of settings exemption. \n\n    The user has another preference 'Never Change'. By enabling this option changes from settings(or)options page are always discarded. In this add-on, the user has an option lo lock settings(or)options page. If the user enables this option, settings(or)options page is opened only with authentication. \n\n    Note: If you are not using Master password and want to use Master password, click correspondinly in the pop-up opened at the time of installation. It will open a separate page so that you can set the master password. If you do not set the master password, then it will ask again what type of authentication you want to use.",
+  "main": "main.js",
+  "author": "svn siva",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "WSU",
+  "permissions": {
+	"private-browsing": true,
+    "multiprocess": true
+},
+  "keywords": [
+    "settings"
+  ],
+  
+  "preferences": [
+  {
+        "name": "AdvancedMonitoring",
+        "title": "Advanced Monitoring",
+        "description": "Authenticates every setting modification occurred includes changes in the settings page (about:preferences) . Upon disabling this feature, changes made in about:preferences are not authenticated. ",
+        "type": "bool",
+        "value": false
+    },
+  {
+        "name": "blockSettingsPage",
+        "title": "Open settings page with authentication",
+        "description": "If more users are using the browser, then this option might me useful in preventing random settings/options changes. Enabling this preference, if anyone tries to open the settings/options page it will ask for a password",
+        "type": "bool",
+        "value": false
+    },
+    {
+        "description": "Never change settings/options from outside of settings page. When you enable this feature, then any change in setting/option value which is not from settings page is discarded",
+        "name": "NeverChange",
+        "type": "bool",
+        "value": false,
+        "title": "Never change settings/options from outside of settings page"
+    },
+	{
+        "name": "AddonsExempt",
+        "title": "Exempt setting/options changes from Add-ons installing",
+        "description": "The only changes exempted by enabling this preference are if the change is due to installing an addon from either 'about:addons' or 'https://addons.mozilla.org/' pages.",
+        "type": "bool",
+        "value": false
+    },
+	{
+		"name": "NewTabExempt",
+        "title": "Exempt New tab url changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+	},
+	{
+        "name": "HomePageExempt",
+        "title": "Exempt Home Page changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },
+	{
+        "name": "SearchEngineExempt",
+        "title": "Exempt Search Engine changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },
+	
+	{
+        "name": "GeneraLExempt",
+        "title": "Exempt General settings changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },{
+        "name": "SearchExempt",
+        "title": "Exempt Search settings changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },{
+        "name": "ContentExempt",
+        "title": "Exempt Content settings changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },{
+        "name": "PrivacyExempt",
+        "title": "Exempt Privacy settings changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },
+	{
+        "name": "SecurityExempt",
+        "title": "Exempt Security settings changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },
+	{
+        "name": "AdvancedExempt",
+        "title": "Exempt Advanced settings changes from monitoring",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },
+	{
+        "name": "AuthenticationChange",
+        "title": "Change authentication method",
+        "description": "",
+        "type": "bool",
+        "value": false
+    },
+	{
+    "name": "recoverUninstall",
+    "type": "string",
+    "title": "Recover from uninstall",
+    "hidden": true,
+	"value": ""
+	},
+	{
+    "name": "recoverOwnUninstall",
+    "type": "string",
+    "title": "Recover from own uninstall",
+    "hidden": true,
+	"value": ""
+	}
+	]
+}

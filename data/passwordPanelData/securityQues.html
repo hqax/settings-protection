@@ -1,0 +1,71 @@
+<head>
+	<meta charset="utf-8"/>
+    <style type="text/css" media="all">
+      
+      body {
+        background-color: gainsboro;
+             border-style:groove;
+			 border-width:5px;
+        
+      }
+      #okaybutton{
+          position:relative;
+          left:190px;
+      }
+      #answer1{
+          position:relative;
+          left:120px;
+      }
+      #answer2{
+          position:relative;
+          left:120px;
+      }
+     
+    </style>
+</head>
+<body><font size="3">
+    
+    <div>
+        <h4>Security questions: (If you forget the password)</h4>
+    </div>
+    
+    <div>Please select the question:  
+        <select id="question1" >
+              <option value="0"></option>
+              <option value="What is the name of your elementary / primary school?">What is the name of your elementary / primary school?</option>
+              <option value="What is the name of your first boy/girl friend?">What is the name of your first boy/girl friend?</option>
+              <option value="What is your hometown?">What is your hometown?</option>
+              <option value="In what city or town does your nearest sibling live?">In what city or town does your nearest sibling live?</option>
+</select>
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        Answer:<input type="text" size="15" autocomplete="off" id="answer1"/>
+    </div>
+    <div>&nbsp;</div>
+    <div>Please select the question:  
+        <select id="question2" >
+              <option value="0"></option>
+              <option value="What is the name of your elementary / primary school?">What is the name of your elementary / primary school?</option>
+              <option value="What is the name of your first boy/girl friend?">What is the name of your first boy/girl friend?</option>
+              <option value="What is your hometown?">What is your hometown?</option>
+              <option value="In what city or town does your nearest sibling live?">In what city or town does your nearest sibling live?</option>
+</select>
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        Answer:<input type="text" size="15" autocomplete="off" id="answer2"/>
+    </div>
+    <div>&nbsp;</div>
+    
+    <div>
+       
+        
+        <button type="button" id="okayButton">Okay</button>
+        
+        
+    </div>
+	<div>&nbsp;</div>
+	<div id = "answer">Please don't select same question or give same answer</div>
+	</font>
+</body>
