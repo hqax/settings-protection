@@ -12,4 +12,4 @@ Settings(or)options changes that are not made by the user are saved only with au
  
  The user has another preference 'Never Change'. By enabling this option changes from settings(or)options page are always discarded. In this add-on, the user has an option lo lock settings(or)options page. If the user enables this option, settings(or)options page is opened only with authentication.               
  
- Note: If you are not using Master password and want to use Master password, click correspondinly in the pop-up opned at the time of installation. It will open a separate page so that you can set the master password. If you do not set the master password, then it will ask again what type of authentication you want to use.
+ Note: If you are not using Master password and want to use Master password, click correspondinly in the pop-up opened at the time of installation. It will open a separate page so that you can set the master password. If you do not set the master password, then it will ask again what type of authentication you want to use.
